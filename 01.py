@@ -12,8 +12,9 @@ except KeyError, e:
 
 pprint(data)  
 #! a datastructure from the collections module allows the append operation
-#d_data = ???
-#d_data.update(data)
-#d_data['C'].append(2)
-#pprint(d_data)
+from collections import defaultdict
+d_data = defaultdict(list)
+d_data.update(data)
+d_data['C'].append(2)
+pprint(d_data)
 

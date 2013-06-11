@@ -8,7 +8,7 @@ with Timer('list code'):
     _ = 0
 with Timer('iterator code'):
   #! change to iterable range 
-  for _ in range(rmax):
+  for _ in xrange(rmax):
     _ = 0
 # time needed after the change should roughly be halved
 

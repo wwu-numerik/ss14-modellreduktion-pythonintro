@@ -8,4 +8,6 @@ def report_letter(c):
 count = 10
 #! results in a en endless loop. why?
 while count > 0:
-  report_letter(--count)
+  # in python --count means -(-(count))
+  report_letter(count)
+  count -= 1
